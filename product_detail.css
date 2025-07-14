@@ -1,0 +1,509 @@
+:root {
+    --neutral-0: #ffffff;
+    --neutral-100: #F8F9FA;
+    --neutral-300: #DEE2E6;
+    --neutral-500: #ADB5BD;
+    --neutral-600: #6C757D;
+    --neutral-900: #212529;
+    --primary-200: #E8FEC5;
+    --primary-300: #C0FA73;
+    --primary-400: #57A203;
+    --primary-500: #477A11;
+	--danger-300: #D74F4F;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+/*通用設定*/
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05rem;
+    color: var(--neutral-900);
+}
+
+img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: var(--neutral-900);
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1296px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.btn{
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+/*欄位設定*/
+
+.col-1{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12);
+}
+
+.col-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*2);
+}
+
+.col-3{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*3);
+}
+
+.col-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*4);
+}
+
+.col-5{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*5);
+}
+
+.col-6{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*6);
+}
+
+.col-7{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*7);
+}
+
+.col-9{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*9);
+}
+
+.col-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*10);
+}
+
+.col-11{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*11);
+}
+
+.col-12{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+}
+
+/*flex設定*/
+
+.d-flex{
+    display: flex;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.aic{
+    align-items: center;
+}
+
+.tac{
+    text-align: center;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+/*字體設定*/
+
+.h2{
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.h3{
+    font-size: 28px;
+    line-height: 120%;
+}
+
+.h4{
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.h5{
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.h6{
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.text-sm{
+	font-size: 14px;
+    line-height: 150%;
+}
+
+/*推擠設定*/
+
+.mb-4{
+    margin-bottom: 4px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
+
+.mb-12{
+    margin-bottom: 12px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mb-26{
+    margin-bottom: 26px;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.mb-40{
+	margin-bottom: 40px;
+}
+
+.mb-48{
+    margin-bottom: 48px;
+}
+
+.mb-64{
+    margin-bottom: 64px;
+}
+
+.mt-32{
+    margin-top: 32px;
+}
+
+.mr-8{
+    margin-right: 8px;
+}
+
+.mr-12{
+    margin-right: 12px;
+}
+
+.mr-24{
+    margin-right: 24px;
+}
+
+.mr-40{
+    margin-right: 40px;
+}
+
+.mr-48{
+    margin-right: 48px;
+}
+
+.px-12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.py-8{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-24{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.py-32{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-48{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.py-64{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.pr-8{
+	padding-right: 8px;
+}
+
+.p-15{
+    padding: 15px;
+}
+
+.gap-8{
+	gap: 8px;
+}
+
+/*細項設定*/
+
+.container a:hover{
+    color:var(--primary-400);
+}
+
+.product-row{
+	margin-left: -4px;
+	padding-left: -4px;
+}
+
+.product-photo{
+	width: calc(100%/12*6);
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.breadcrumb-item{
+	display: flex;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    content: '/';
+    padding: 0px 12px;
+    color: var(--neutral-300);
+    font-weight: 700;
+}
+
+.breadcrumb-link{
+    color: var(--neutral-600);
+}
+
+.breadcrumb-link:hover {
+  	color: var(--primary-400);
+}
+
+.discount{
+	color: var(--primary-400);
+	font-weight: 700;
+	padding-right: 8px;
+}
+
+.original-price{
+	color: var(--neutral-500);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	text-decoration: line-through;
+}
+
+.product-color img{
+	width: 64px;
+}
+
+.product-color p{
+	color: var(--neutral-600);
+}
+
+.product-color-hover:hover{
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+	border-color: var(--primary-400);
+    background-color: var(--primary-200);
+}
+
+.product-color-hover:hover p{
+	color: var(--primary-500);
+}
+
+.product-size-line{
+	border: 1px solid var(--neutral-300);
+	width: 160px;
+}
+
+.product-size-line.active{
+	border: 1px solid var(--neutral-900);
+}
+
+.product-size-line:hover{
+	background-color: var(--neutral-900);
+	color: var(--neutral-0);
+}
+
+.out-of-stock{
+	opacity: 50%;
+}
+
+.product-size p{
+	color: var(--danger-300);
+}
+
+.product-size-collect,
+.product-size-reserve{
+	border:1px solid var(--neutral-900);
+	width:259px;
+}
+
+.product-size-collect:hover,
+.product-size-reserve:hover{
+	border:1px solid var(--neutral-900);
+	background-color: var(--neutral-900);
+	color: var(--neutral-0);
+}
+
+.product-information p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--neutral-600);
+}
+
+.product-information{
+	border-bottom: 1px solid var(--neutral-300);
+}
+
+.discount-banner{
+    background-color: var(--primary-200);
+}
+
+.discount-banner .btn{
+    background-color: var(--neutral-900);
+    color:var(--neutral-0)
+}
+
+.discount-banner .btn:hover{
+    background-color: var(--neutral-600);
+    color:var(--neutral-0);
+}
+
+.footer-menu{
+    margin: 0 auto;
+    width: 1296px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.footer-menu a:hover{
+    color: var(--primary-400);
+}
+
+footer{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: var(--neutral-600);
+}
